@@ -33,6 +33,7 @@
   
   // Put your answer below -------------------------
   
+  const doSomethingCool = function(){console.log(`Something Cool`)}
   
   // -----------------------------------------------
   
@@ -53,7 +54,8 @@
   
   // Put your answer below -------------------------
   
-  
+  sayHi = function(){alert("Hello, World!")};
+
   // -----------------------------------------------
   
   //////////////////////////////////////////////////
@@ -83,6 +85,8 @@
   
   // Put your answer below -------------------------
   
+  // b. Y then z because the computer will execute the code top to botom.
+  // I think the code will wait the delay.
   
   // -----------------------------------------------
   
@@ -137,10 +141,26 @@
       return "#000000";
     }
   };
+
+ 
   
   // Put your answer below -------------------------
   
-  
+  let colors = {
+    rojo: "#ff0000", 
+    blanco: "#ffffff", 
+    azul: "#0000ff", 
+    verde: "00ff00", 
+    negro: "000000"
+  }
+
+  function spanishColor(str) {
+    if(colors.hasOwnProperty(str)) {
+      return colors.str
+    } else {
+      console.log(`Color not valid!`);
+    }
+  }
   
   // -----------------------------------------------
   
@@ -158,6 +178,8 @@
   
   // Put your answer below -------------------------
   
+  var foo;
+  foo = `bar`;
   
   // -----------------------------------------------
   
@@ -182,7 +204,11 @@
   
   // Put your answer below -------------------------
   
-  
+  var callNTimes = function(callback, i) {
+    var range = Array.from(Array(i).keys());
+    range.forEach(callback);
+  };
+
   // -----------------------------------------------
   
   //////////////////////////////////////////////////
@@ -210,7 +236,15 @@
   
   // Put your answer below -------------------------
   
-  
+  function score() {
+    let score = 0;
+    let increaseScore = function() {
+      score++;
+    let decreaseScore = function() {
+      score--;
+    }
+    }
+  }score();
   
   // -----------------------------------------------
   
@@ -231,7 +265,11 @@
   
   // Put your answer below -------------------------
   
+  var addNumbers = function(numberA, numberB) {
+    return(numberA + numberB);
+  };
   
+  var twoPlusTwo = addNumbers(2,2);
   
   // -----------------------------------------------
   
@@ -252,13 +290,13 @@
   
   var speed = 0;
   
-  var accelerate = function(amount) {
+  var accelerate = function(amount = 1) {
     speed += amount;
   };
   
   // Put your answer below -------------------------
   
-  
+  // It was giving a value of NaN because 0 + undefined is not a number
   
   // -----------------------------------------------
   
